@@ -6,12 +6,21 @@ Este repositório contém um projeto desenvolvido como parte do curso da [DIO](h
 
 O sistema bancário implementa as seguintes funcionalidades:
 
-- **Depósito**: Permite ao usuário realizar depósitos em sua conta.
-- **Saque**: Permite realizar saques com as seguintes restrições:
-  - Limite de 3 saques diários.
-  - Valor máximo por saque de R$ 500,00.
-- **Extrato**: Exibe o histórico de transações (depósitos e saques) e o saldo final.
-  - Os valores são formatados de acordo com o padrão brasileiro (R$ 1.365,33).
+**Gerenciamento de Usuários:**
+Cadastro de novos usuários com informações como nome, data de nascimento, CPF e endereço.
+Validação para garantir que não haja duplicação de CPF.
+
+**Gerenciamento de Contas Correntes:**
+Criação de contas correntes vinculadas a um usuário existente.
+A conta possui um número sequencial e uma agência fixa.
+
+**Operações Bancárias:**
+Depósito: Permite adicionar um valor ao saldo da conta. O depósito é registrado no extrato.
+Saque: Permite retirar um valor do saldo da conta, respeitando um limite de saques diários e um valor máximo por saque. O saque também é registrado no extrato.
+Extrato: Exibe todas as transações realizadas em uma conta, incluindo depósitos e saques, com a data e o saldo após cada transação.
+
+**Listagem de Contas:**
+Exibe uma lista de todas as contas cadastradas no sistema, mostrando informações como agência, número da conta e dados do usuário.
   
 ## Tecnologias Utilizadas
 
